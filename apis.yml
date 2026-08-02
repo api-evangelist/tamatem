@@ -1,7 +1,24 @@
 aid: tamatem
 name: Tamatem
-description: Tamatem is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Tamatem is a Jordan-based mobile games publisher and platform focused on the Arabic-speaking
+  MENA market. It localizes and publishes mobile games for Arab gamers and operates Tamatem Plus
+  (tamatemplus.com), a consumer store for game vouchers, in-game items, and top-ups with a range of local
+  payment options. Backed by 500 Global. As of this enrichment pass Tamatem publishes no public developer
+  portal, API documentation, SDKs, or machine-readable API surface — it is a consumer-facing gaming and
+  digital-goods business, so this profile carries identity and a domain-security probe rather than API
+  artifacts.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://d2y57x1emo670n.cloudfront.net/media/uploads/Tamatem-Plus-Final-(2).png
 url: https://raw.githubusercontent.com/api-evangelist/tamatem/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Gaming
+- Mobile Games
+- Game Publishing
+- MENA
+- Arabic
+- Digital Goods
+- Payments
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tamatem-domain-security.yml
 - type: Website
   url: https://tamatem.co
+- type: Store
+  name: Tamatem Plus Store
+  url: https://tamatemplus.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
